@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tonejs Midi</title>
+	<script type="text/javascript" src="https://unpkg.com/@tonejs/midi"></script>
+	<script type="text/javascript" src="https://unpkg.com/tone@13.4.9"></script>
+	<script type="text/javascript" src="https://unpkg.com/@tonejs/ui@0.0.8"></script>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <script src="./WebMidiAPI.min.js"></script>
+    <script src="./home.js"></script>
+	<div class="staff" >
+        <img src="./images/treble_clef.svg" width=400>          
+        <img src="./images/sharp.svg" width=25 class="accidental sharp">
+        <img id="whole-note" src="./images/wholenote.svg" height=35 class="whole-note">
+			
+            </div>
+            <div class="button">
+                <button id="reset" onclick="resetButton()">Exit</button>
+                <button id="again" onclick="againButton()">Play Again</button>
+                
+            </div>
+
+            <div class="note-info"></div>
+            
+</body>
+</html>
